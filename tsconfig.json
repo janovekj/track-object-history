@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "declaration": true,
+    "strict": true,
+    "types": ["jest"]
+  },
+  "include": ["src"],
+  "exclude": ["**/*.spec.ts"]
+}

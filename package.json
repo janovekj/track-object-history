@@ -1,0 +1,39 @@
+{
+  "name": "track-object-history",
+  "version": "1.0.0",
+  "description": "Proxy for tracking object mutations",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "mutation",
+    "history",
+    "proxy",
+    "debugging"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/janovekj/track-object-history.git"
+  },
+  "homepage": "https://github.com/janovekj/track-object-history#readme",
+  "scripts": {
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build": "npm run build:types && npm run build:js",
+    "test": "jest"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "Jan Ove Kjærland",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "typescript": "^3.7.2"
+  }
+}
